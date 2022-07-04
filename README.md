@@ -9,6 +9,11 @@ Facilitate personal study
 ```go
 package main
 
+import (
+	router "github.com/summer-boythink/router-toy"
+	"net/http"
+)
+
 func main(){
     r := router.New()
     r.Get("aa/:name/c", func(writer http.ResponseWriter, request *http.Request) {
